@@ -2,6 +2,7 @@ package mycard;
 
 public class TestMyCard {
     public void run(){
+        int index = 0;
         MyCard card1 = new MyCard();
         MyCard card2 = new MyCard();
         MyCard card3 = new MyCard();
@@ -16,7 +17,15 @@ public class TestMyCard {
         System.out.println(deck);
         DeckOfCards deck2 = new DeckOfCards(2);
         System.out.println(deck2);
-
+        System.out.println(deck2.getNext(index));
+        System.out.println(deck2.getNext(index));
+        System.out.println(deck2);
+        System.out.println(deck2.getLast());
+        System.out.println(deck2.getLast());
+        System.out.println(deck2.getLast());
+        System.out.println(deck2);
+        deck2.shuffle();
+        System.out.println(deck2);
     }
 
     public static void main(String[] args) {
